@@ -14,7 +14,7 @@ class Topic
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $tite = null;
+    private ?string $title = null;
 
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
@@ -27,14 +27,14 @@ class Topic
         return $this->id;
     }
 
-    public function getTite(): ?string
+    public function getTitle(): ?string
     {
-        return $this->tite;
+        return $this->title;
     }
 
-    public function setTite(string $tite): static
+    public function setTitle(string $title): static
     {
-        $this->tite = $tite;
+        $this->title = $title;
 
         return $this;
     }
